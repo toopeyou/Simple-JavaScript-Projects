@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokeApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+
+</head>
+<body>
+    <main>
+        <div class="header">
+            <button class="Open-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="home-wrapper">
+            <span id="logo">&#128514</span>
+            <p id="joke">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eos voluptatum rem odit minima, modi nesciunt commodi temporibus delectus architecto quaerat facere. Ea aut repellendus sapiente. Modi ut mollitia blanditiis?    
+            </p>
+            <button id="getJoke">Get a Joke</button>
+        </div>
+
+
+
+        <div class="setting-wrapper none">
+            <h2 class="Setting-title">
+                Setting
+            </h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><h5>Select</h5><span>Language</span>:</td>
+                        <td>
+                            <div class="Setting-row">
+                                <select name="Language" id="lang">
+                                    <option value="en">en English</option>
+                                    <option value="de">de German</option>
+                                    <option value="cs">cs Czech</option>
+                                    <option value="es">es Spanish</option>
+                                    <option value="pt">pt Portuguese</option>
+                                    <option value="fr">fr French</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>Select flags to <span>blacklist</span>:</h5></td>
+                        <td>
+                            <div class="setting-div multiselect noselect">
+                            <div><input onchange="BlackListCheckbox()" class="bl" type="checkbox" id="blf-cb1" ><label for="blf-cb1">nsfw</label>      </div>        
+                            <div><input onchange="BlackListCheckbox()" class="bl" type="checkbox" id="blf-cb2" ><label for="blf-cb2">religious</label></div>
+                            <div><input onchange="BlackListCheckbox()" class="bl" type="checkbox" id="blf-cb3" ><label for="blf-cb3">political</label></div>
+                            <div><input onchange="BlackListCheckbox()" class="bl" type="checkbox" id="blf-cb4" ><label for="blf-cb4">racist</label>    </div>      
+                            <div><input onchange="BlackListCheckbox()" class="bl" type="checkbox" id="blf-cb5" ><label for="blf-cb5">sexist</label></div>
+                            <div><input onchange="BlackListCheckbox()" class="bl" type="checkbox" id="blf-cb6" ><label for="blf-cb6">explicit</label></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <h5>Select <span>joke type</span>:</h5>	
+                        </td>
+                        <td>
+                            <div class=" setting-div type-of-joke">
+                                <input onclick="TypeOfJoke()" type="checkbox" id="twopart"> <label for="twopart">Twopart</label>
+                                <input onclick="TypeOfJoke()" type="checkbox" id="single" > <label for="single">Single</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>Select <span>category</span>:</h5>
+                        </td>
+                        <td>
+                            <div class="setting-div category">
+                            <div>  <input onchange="CategoryChange()" class="category-input" type="checkbox" id="ct-cb1" ><label for="ct-cb1">Programming</label>  </div>
+                            <div>  <input onchange="CategoryChange()" class="category-input" type="checkbox" id="ct-cb2" ><label for="ct-cb2">Miscellaneous</label></div>
+                            <div>  <input onchange="CategoryChange()" class="category-input" type="checkbox" id="ct-cb3" ><label for="ct-cb3">Dark</label></div>
+                            <div>  <input onchange="CategoryChange()" class="category-input" type="checkbox" id="ct-cb4" ><label for="ct-cb4">Pun</label></div>
+                            <div>  <input onchange="CategoryChange()" class="category-input" type="checkbox" id="ct-cb5" ><label for="ct-cb5">Spooky</label></div>
+                            <div>  <input onchange="CategoryChange()" class="category-input" type="checkbox" id="ct-cb6" ><label for="ct-cb6">Christmas</label></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./script/setting.js"></script>
+    <script src="./script/Main.js"></script>
+
+    <script src="./script/buttons.js"></script>
+</body>
+</html>
