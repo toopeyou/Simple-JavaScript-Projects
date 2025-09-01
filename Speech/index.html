@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Speech</title>
+</head>
+<body>
+
+  <main>
+    <div class="Nav">
+      <button class="text-to-speech-btn active">TEXT TO SPEECH</button>
+      <button class="speech-to-text-btn">SPEECH TO TEXT</button>
+    </div>
+    <div class="Speech-to-text none">
+      <div class="record-side">
+          <button class="startRecordButton"><i class="fa-solid fa-microphone" id="start"></i></button>
+
+
+          <button class="stopRecordButton none">
+            <span>
+              
+              <i class="fa-solid fa-stop"></i>
+                STOP
+            </span> 
+            <span class="timer"> 00:00 </span>
+          </button>
+          <textarea class="speech" placeholder="say anything to your microphone..." disabled></textarea>  
+
+      </div>
+    </div>
+
+    <div class="Text-to-speech">
+        <textarea id="text" placeholder="Write anything here...."></textarea>
+        <div class="row">
+            <select></select>
+            <button id="listen">Listen</button>
+        </div>
+    </div>
+  </main>
+
+
+
+  <script src="./script/main.js"></script>
+  <script src="./script//text-to-speech.js"></script>
+  <script src="./script/speech-to-text.js"></script>
+
+<script>
+</script>
+</body>
+</html>
