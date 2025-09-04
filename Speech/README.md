@@ -17,8 +17,4 @@
 - **JavaScript (Vanilla)**
 - **Web Speech API** (`SpeechSynthesis`, `SpeechRecognition`)
 
-## ## ⚡ Установка и запуск
-1. Склонируй репозиторий:
-   ```bash
-   git clone https://github.com/username/speech-app.git
-   cd speech-app
+
