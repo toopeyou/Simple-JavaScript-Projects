@@ -1,0 +1,152 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+.nigth-mode main {background-color: #000; color: #fff;}
+.nigth-mode .keyboard-item {background: #2E2F38; color: #FFFFFF;}
+.nigth-mode .calculator-display p{color: #fff; }
+
+main {
+    background: #e5e5ec;
+    max-height: 1024px;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%; 
+}
+.container {
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+
+
+
+.mode {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background: #2a2a3d;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: background 0.3s;
+}
+
+.changeBtn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background: #555a6e;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+ .slider {
+    transform: translateX(35px);
+    background: #4f4fff;
+ }
+
+.icon {
+    margin-left: auto;
+    margin-right: 10px;
+    color: #4f4fff;
+    font-size: 20px;
+}
+
+.keyboard-item {
+    cursor: pointer;
+    width: 170px;
+    max-width: 171px;
+    height: 72px;
+    border-radius: 24px;
+    border: none;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    background: #fff;
+
+}
+.keyboard-item:hover {
+    transform: scale(1.1);
+}
+
+.keyboard-item-ls {background-color: #4B5EFC !important;}
+.keyboard-item-ts {background: #4E505F !important;}
+.keyboard-row {
+    display: flex;
+    gap: 16px;
+}.calculator-keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.calculator-display{ height: 175px; max-width: 600px;}
+
+h2 {
+    overflow: auto;
+    text-align: right;
+    font-family: 'Work Sans';
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 96px;   
+    padding: 16px 0;
+}
+
+.calculator-display p{
+    white-space: nowrap;
+    overflow: hidden;  
+    text-overflow: ellipsis; 
+    font-family: 'Work Sans';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: right;
+    color: #000;
+    opacity: 0.4;
+
+
+}
+.fz {font-size: 25px;}
+
+
+
+
+
+
+.mediumSize h2 { font-size: 52px;}
+.lowSize h2{font-size: 42px;}
+
+@media (max-width: 500px) {
+    .keyboard-item {
+        max-width: 72px;
+    }.calculator-display p{ font-size: 30px;}
+    h2{font-size: 60px; line-height: 48px;}
+    .calculator-display {height: 135px;}
+   .mediumSize h2{font-size: 32px;}
+   .lowSize h2 {font-size: 22px;}
+   .mediumSize p {font-size: 20px;}
+   .fz{font-size: 17.5px !important;}
+    
+        
+}
+
+
