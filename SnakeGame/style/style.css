@@ -1,0 +1,41 @@
+body {
+background: linear-gradient(90deg, #0e0c0c, #633450, #1f1f92);
+
+
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    width: 90vw;  
+    height: 90vw;  
+    max-width: 608px;
+    max-height: 608px;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 608px;
+    margin: 10px auto;
+    gap: 5px;
+}
+.buttons img {
+    max-width: 32px;
+    max-height: 32px;
+}
+span, .buttons button {
+    padding: 15px;
+    background: gray;
+    border-radius: 10px;
+    border: none;
+}
+
+@media (max-width: 700px) {
+    .buttons {
+        display: flex;
+    }
+  }
