@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+body{font-family: "Poppins", sans-serif;}
+
+
+main {   
+    margin:  0 auto;
+    background: #AFACB1;
+    background: linear-gradient(180deg, #AFACB1, #D38852);    width: 90%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    max-width: 500px;
+    padding: 100px 30px 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+input[type="number"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    z-index: 5;
+}
+.input-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.CheckBinBtn {
+  border: none;
+  padding: 15px;
+}
+
+
+.card {
+ color: #fff;
+  position: absolute; 
+  background: linear-gradient(45deg, rgb(68, 59, 103), rgb(30, 30, 29));
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 28px;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  z-index: -10;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SchemeLogo, .Flag {max-width: 48px;}
+.CardType {
+  font-size: 16px;
+  font-weight: 400;
+}.header-left {display: flex; align-items: center; gap: 5px;}
+
+.Card-names h3 {
+    font-size: 14px;
+    font-weight: 400;
+}.Card-names h2 {font-size: 28px; margin-bottom: 15px; margin-top: 5px;}
+.BankName {color: #fff;}
+.container .card-details {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.cardCategory {
+  font-size: 18px;
+}
+
+.card.show {
+  animation: showCard 1.5s ease-out forwards;
+}
+@keyframes showCard {
+  0% {
+    top: -10px;
+    opacity: 0;
+    z-index: -10;
+    transform: translateX(-50%) scale(0.9);
+  }
+  50% {
+    top: -190px;
+    opacity: 1;
+    z-index: -10;
+    transform: translateX(-50%) scale(1.05);
+  }
+  80% {
+    top: -220px;
+    z-index: -10;
+    transform: translateX(-50%) scale(1);
+  }
+  100% {
+    top: -150px;
+    opacity: 1;
+    z-index: 10;
+    transform: translateX(-50%) scale(1);
+  }
+}
+@media (max-width: 600px) {
+ 
+  .Card-names h2 {font-size: 15px;}
+  .BankName {font-size: 15px;   
+    overflow:hidden;
+    display:inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 175px;
+  }
+  .cardCategory {
+    font-size: 10px;
+    overflow:hidden;
+    display:inline-block;
+    text-overflow: ellipsis;
+    max-width: 75px;
+  }
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 5%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, #AFACB1, #D38852);    width: 90%;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -2;
+}
