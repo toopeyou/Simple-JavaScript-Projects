@@ -1,4 +1,5 @@
 document.addEventListener('keydown', direction)
+let buttons = document.querySelectorAll('button')
 let dir;
 function direction(event) {
     if (event.keyCode == 37 && dir != 'rigth') {

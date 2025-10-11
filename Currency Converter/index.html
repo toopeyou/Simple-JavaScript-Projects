@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Converter || TOOPEYOU</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+      <div class="wrapper">
+        <h1 class="title">
+            Currency Converter
+        </h1>
+
+        <div class="form">
+            <div class="amount">
+              <p>Enter Amount</p>
+              <input class="input" type="number" value="1">
+            </div>
+            <div class="drop-list">
+              <div class="from">
+                <p>From</p>
+                <div class="select-box">
+                  <img class="fromFlag" src="https://flagcdn.com/48x36/ae.png" alt="flag">
+                  <select class="fromList"> </select>
+                </div>
+              </div>
+              <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+              <div class="to">
+                <p>To</p>
+                <div class="select-box">
+                  <img class="toflag" src="https://flagcdn.com/48x36/ae.png" alt="flag">
+                  <select class="toList"> </select>
+                </div>
+              </div>
+            </div>
+            <div class="exchange-rate">Getting exchange rate...</div>
+            
+            <button class="btn">Get Exchange Rate</button>
+          </div>
+
+    </div>
+  </main>
+  <script src="./script/CountryList.js"></script>
+
+  <script src="./script/main.js"></script>
+</body>
+</html>
